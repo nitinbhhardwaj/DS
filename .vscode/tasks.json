@@ -2,28 +2,17 @@
   "version": "2.0.0",
   "tasks": [
     {
-      "label": "Run C++",
+      "label": "Compile and Run C++",
       "type": "shell",
-      "command": "g++",
-      "args": [
-        "-std=c++17",
-        "${file}",
-        "-o",
-        "${fileDirname}/${fileBasenameNoExtension}"
-      ],
+      "command": "g++ -std=c++17 \"${file}\" -o \"${workspaceFolder}/program\" && \"${workspaceFolder}/program\" < \"${workspaceFolder}/Settingup/input.txt\" > \"${workspaceFolder}/Settingup/output.txt\"",
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
       "problemMatcher": [],
-      "dependsOn": "Execute C++",
-      "dependsOrder": "sequence",
       "group": {
         "kind": "build",
         "isDefault": true
       }
-    },
-    {
-      "label": "Execute C++",
-      "type": "shell",
-      "command": "\"${fileDirname}/${fileBasenameNoExtension}\" < \"${workspaceFolder}/Settingup/input.txt\" > \"${workspaceFolder}/Settingup/output.txt\"",
-      "problemMatcher": []
     }
   ]
 }
