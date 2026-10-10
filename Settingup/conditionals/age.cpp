@@ -6,6 +6,10 @@ int main()
     cin>>age;
     if(age<18)
     {
-        cout<<
+        cout<<"Not Adult";
+    }
+    else
+    {
+        cout<<"Adult";
     }
 }
