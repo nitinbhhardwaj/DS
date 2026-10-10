@@ -4,19 +4,28 @@ int main(){
 int ch;
 cin>>ch;
 switch(ch){
-case '1':
+case 1:
          cout<<"Monday";
-case '2':
+         break;
+case 2:
          cout<<"Tuesday";
-case '3':
+         break;
+case 3:
          cout<<"Wednesday";
-case '4':
+         break;
+case 4:
          cout<<"Thursday";
-case '5':
+         break;
+case 5:
          cout<<"Friday";
-case '6':
+         break;
+case 6:
          cout<<"Saturday";
-case '7':
+         break;
+case 7:
          cout<<"Sunday";
+         break;
+default:
+         cout<<"Enter a num between 1 to 7";
 }
 }
