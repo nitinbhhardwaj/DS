@@ -1,1 +1,5 @@
-Enter a num between 1 to 7
+1
+2
+3
+4
+5
