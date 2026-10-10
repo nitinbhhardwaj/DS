@@ -8,15 +8,15 @@ int main()
     {
         cout<<"Not eligible for job";
     }
-    else if(age>=18)
+    else if(age<=57)
     {
         cout<<"eligible for job";
-        if(age>=55 && age<=57)
+        if(age>=55)
         {
-            cout<<", but retirement soon.";
+            cout<< ", but retirement soon.";
         }
     }
-    else if(age>57)
+    else
         {
             cout<<"retirement time";
         }
