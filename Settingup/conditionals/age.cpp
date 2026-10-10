@@ -8,7 +8,7 @@ int main()
     {
         cout<<"Not Adult";
     }
-    else
+    else if
     {
         cout<<"Adult";
     }
