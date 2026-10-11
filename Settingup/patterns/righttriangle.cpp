@@ -41,9 +41,25 @@ void print2(int n)
         cout<<endl;
     }
 }
+void print3(int n)
+{
+    for(int i=0;i<n;i++)
+    {
+        for(int j=0;j<n-i;j++)
+        {
+            cout<<" ";
+        }
+        for(int k=0;k<=2*i;k++)
+        {
+            cout<<"*";
+        }
+        
+        cout<<endl;
+    }
+}
 int main()
 {
     int n;
     cin>>n;
-    print2(n);
+    print3(n);
 }
