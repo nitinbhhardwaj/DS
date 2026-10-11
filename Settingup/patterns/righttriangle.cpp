@@ -77,7 +77,7 @@ void print5(int n)
 {
     for(int i=0;i<n;i++)
     {
-        for(int j=1;j<=i;j++)
+        for(int j=0;j<i;j++)
         {
             cout<<" ";
         }
@@ -89,9 +89,36 @@ void print5(int n)
         cout<<endl;
     }
 }
+void print6(int n)
+{
+    for(int i=0;i<n;i++)
+    {
+        for(int j=1;j<n-i;j++)
+        {
+            cout<<" ";
+        }
+        for(int k=0;k<=2*i;k++)
+        {
+            cout<<"*";
+        }
+        cout<<endl;
+    }
+    for(int i=0;i<n;i++)
+    {
+        for(int j=0;j<=i;j++)
+        {
+            cout<<" ";
+        }
+        for(int k=0;k<2*n-(2*i+1)-2;k++)
+        {
+            cout<<"*";
+        }
+        cout<<endl;
+    }
+}
 int main()
 {
     int n;
     cin>>n;
-    print5(n);
+    print6(n);
 }
